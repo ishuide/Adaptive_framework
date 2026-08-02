@@ -26,7 +26,7 @@ The final month brought advanced feature extraction and a critical evaluation of
 
 ## Dataset
 The dataset used for training and evaluation is hosted on Kaggle:  
-**[AI vs Real Image Dataset on Kaggle](https://www.kaggle.com/datasets/ishuide/real-detector-dataset-v2)**
+**[AI vs Real Image Dataset on Kaggle](https://www.kaggle.com/datasets/ishu15m/ai-vs-real-images)**
 
 > Replace the link above with your actual Kaggle dataset URL if different.
 
