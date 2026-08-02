@@ -1,0 +1,11 @@
+numpy
+opencv-python
+torch
+pandas
+gradio
+joblib
+Pillow
+transformers
+scikit-learn
+xgboost
+lightgbm

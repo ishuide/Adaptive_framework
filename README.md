@@ -24,9 +24,15 @@ The final month brought advanced feature extraction and a critical evaluation of
 *   **The Generalization Wall (Real-World Test):** Recognizing the difference between constrained-domain testing and the wild, a live interactive test was run on a genuine WhatsApp screenshot (documented in cell 38 of the v3 baseline). The transformation sweep returned 21 "AI" votes vs 23 "Real" votes—a near coin-flip. This exposed the extreme difficulty of extracting usable metadata from heavily compressed messaging-app images, demonstrating where the single-pass ensemble struggles to generalize.
 *   **Parallel Streaming Experiment (notebooks/04_inference_pipeline.ipynb):** Initially named `final.ipynb`, this notebook represents a separate, parallel experiment testing a dual-stream end-to-end model trained on 96k streamed images, independent of the main 15-detector ensemble.
 
+## Dataset
+The dataset used for training and evaluation is hosted on Kaggle:  
+**[AI vs Real Image Dataset on Kaggle](https://www.kaggle.com/datasets/ishuide/real-detector-dataset-v2)**
+
+> Replace the link above with your actual Kaggle dataset URL if different.
+
 ## Current Project Status
 *   **Backend:** Completed. 
-*   **Frontend / UI:** In development to allow users to interact with the pipeline without running backend scripts.
+*   **Frontend / UI:** A Streamlit-based UI (`app.py`) is included for interactive single-image detection.
 *   **Next Steps:** Developing a secondary, lighter-weight pipeline dedicated specifically to correcting the FP/FN edge cases (like WhatsApp compressions) by analyzing metadata extraction patterns.
 
 ## Repository Structure
@@ -34,5 +40,5 @@ The final month brought advanced feature extraction and a critical evaluation of
 *   `notebooks/02_v3_optimized_ensemble.ipynb`: The tuning pass for the v3 ensemble.
 *   `notebooks/03_v4_clip_enhanced.ipynb`: Introduction of the CLIP multi-prompt detector.
 *   `notebooks/04_inference_pipeline.ipynb`: The parallel dual-stream end-to-end model experiment.
-*   `app.py`: Backend MVP implementation.
-*   `archive/`: Older experimentation files and patches.
+*   `app.py`: Backend + UI implementation for interactive image detection.
+*   `requirements.txt`: Python dependencies needed to run the project.
